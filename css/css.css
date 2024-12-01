@@ -1,4 +1,42 @@
+/*Global reset af layout*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/*Her styler jeg min navigations-bar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+
+}
 #headerbillede{
     width: 150px;
     height: auto;
 }
+
+.navbar a {
+    text-decoration: none;
+    color: #14140d;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #a52a2a;
+}
+
+
+/* Footer */
+
+
+
