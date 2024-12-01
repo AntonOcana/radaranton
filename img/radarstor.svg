@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.96 45.96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a62a2a;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <g>
+      <circle class="cls-1" cx="22.98" cy="22.98" r="22.98"/>
+      <g>
+        <path d="M37.91,9.92c0,3.56-2.87,6.41-6.48,6.41s-6.49-2.85-6.49-6.41v-.87h12.97"/>
+        <polyline points="11.84 38.85 22.59 38.85 22.59 9.05 11.84 9.05"/>
+      </g>
+    </g>
+  </g>
+</svg>
