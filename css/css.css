@@ -35,8 +35,29 @@ body{
     color: #a52a2a;
 }
 
+.galleri {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    gap: 10px;
+}
 
-/* Footer */
 
+.galleri img{
+    justify-content: space-between; /* Tilføj mellemrum mellem billederne */
+    width: 670px;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
 
+.galleri img:hover {
+    opacity: 0.5;
+}
 
+.footer{
+    position: fixed;
+}
+.footertekst{
+font-weight: bold;
+
+}
