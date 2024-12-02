@@ -45,8 +45,8 @@ body{
 
 .galleri img{
     justify-content: space-between; /* Tilføj mellemrum mellem billederne */
-    width: 670px;
-    padding: 10px;
+    width: 625px;
+    padding: 20px;
     transition: opacity 0.3s ease;
 }
 
@@ -54,10 +54,44 @@ body{
     opacity: 0.5;
 }
 
-.footer{
-    position: fixed;
-}
-.footertekst{
-font-weight: bold;
 
+/*FOOTEREN STYLES HER*/
+
+footer {
+    color: #14140d;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 600px;  /* Limit the width for better readability */
+}
+
+.contact-info span {
+    display: block;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #14140d;
+    text-decoration: none;
+}
+
+.some a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.some img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.8;
 }

@@ -1,0 +1,84 @@
+/* Generel styling for siden */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #f4f4f4;
+}
+
+#frivillig{
+    display: flex;
+
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #f2f2f2;
+    color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0;
+
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info span {
+    display: block;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Social Media Icons */
+.some {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.some a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.some a:hover img {
+    transform: scale(1.2);
+}

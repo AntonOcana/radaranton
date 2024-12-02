@@ -1,0 +1,93 @@
+/* Generelle stilarter */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #14140d;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Layout til sektioner */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+section .text {
+  flex: 1;
+  max-width: 600px;
+}
+
+section .image {
+  flex: 1;
+  max-width: 500px;
+}
+
+section .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Styling af overskrifter */
+h1, h2, h3 {
+  color: #14140d;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #14140d;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Styling af footer */
+footer {
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-info {
+  text-align: left;
+  max-width: 600px;
+}
+
+.contact-info span {
+  display: block;
+  margin: 5px 0;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.some a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.some img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;
+}
