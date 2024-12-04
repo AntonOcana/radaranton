@@ -1,84 +1,74 @@
 /* Generel styling for siden */
-body {
-    font-family: Arial, Helvetica, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: var(--hvid);
 }
 
 header {
-    background-color: #f2f2f2;
-    padding: 10px 0;
+    background-color: var(--hvid);
     text-align: center;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    padding: 20px;
 }
 
 .navbar a {
-    color: #f2f2f2;
+    color: var(--hvid);
     text-decoration: none;
     font-size: 16px;
 }
 
 .navbar a:hover {
-    color: #f4f4f4;
+    color: var(--rød);
 }
 
 #frivillig{
-    display: flex;
-
+    padding: 20px;
+    gap: 20px;
+display: flex;
 }
-
 
 
 /* Footer styling */
 footer {
-    background-color: #f2f2f2;
-    color: #f2f2f2;
-    padding: 40px 20px;
+    color: var(--sort);
+    padding: 30px;
     text-align: center;
-    box-shadow: 0;
-
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
 
 .contact-info {
-    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;  /* Limit the width for better readability */
 }
 
 .contact-info span {
     display: block;
-    font-size: 16px;
     margin: 5px 0;
 }
 
 .contact-info a {
-    color: #f2f2f2;
+    color: var(--sort);
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Social Media Icons */
-.some {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.some a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
-.some a img {
+.some img {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s;
-}
-
-.some a:hover img {
-    transform: scale(1.2);
+    opacity: 0.8;
 }

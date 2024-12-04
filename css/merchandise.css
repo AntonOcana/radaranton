@@ -7,32 +7,23 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: var(--hvid);
     color: #14140D;
     line-height: 1.6;
-    padding: 20px;
 }
 
 /* Header and Navbar */
 header {
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: var(--hvid);
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
-.navbar a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 20px;
-    padding: 10px;
-    transition: color 0.3s;
-}
 
 .navbar a:hover {
     color: #ff6f61;
@@ -43,7 +34,7 @@ header {
     margin-right: 20px;
 }
 
-/* Main Section */
+/* Selve mainen(tekst) */
 main {
     text-align: center;
     margin: 40px auto;
@@ -65,7 +56,7 @@ p {
     margin-right: auto;
 }
 
-/* Images Section */
+/* Billederne i bunden af tekst */
 .mangebilleder {
     display: flex;
     justify-content: space-around;
@@ -82,50 +73,43 @@ p {
     transform: scale(1.1);
 }
 
-/* Footer Section */
+/* footeren styles */
 footer {
-    background-color: #f2f2f2;
-    color: #f2f2f2;
-    padding: 40px 20px;
+    color: var(--sort);
+    padding: 30px;
     text-align: center;
-    box-shadow: 0;
-
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
 
 .contact-info {
-    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;  /* Limit the width for better readability */
 }
 
 .contact-info span {
     display: block;
-    font-size: 16px;
     margin: 5px 0;
 }
 
 .contact-info a {
-    color: #f2f2f2;
+    color: #14140d;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* Social Media Icons */
-.some {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.some a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
-.some a img {
+.some img {
     width: 30px;
     height: 30px;
-    transition: transform 0.3s;
+    opacity: 0.8;
 }
 
-.some a:hover img {
-    transform: scale(1.2);
-}

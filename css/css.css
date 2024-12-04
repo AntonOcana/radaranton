@@ -5,10 +5,20 @@
     box-sizing: border-box;
 }
 
+:root{
+    --sort:#14140d; 
+    --hvid:#f2f2f2;
+    --rød:#a52a2a; 
+    font-family: "neue-haas-unica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
+    font-family: "neue-haas-unica", sans-serif;
+    background-color: var(--hvid);
 }
 
 /*Her styler jeg min navigations-bar*/
@@ -17,7 +27,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: var(--hvid);
 
 }
 #headerbillede{
@@ -32,16 +42,16 @@ body{
 }
 
 .navbar a:hover {
-    color: #a52a2a;
+    color: var(--rød);
 }
 
+/*Her påbegynder jeg stylingen af mit "galleri" altså de 3 billeder der fremgår på forside*/
 .galleri {
     display: flex;
     height: auto;
     max-width: 100%;
     gap: 10px;
 }
-
 
 .galleri img{
     justify-content: space-between; /* Tilføj mellemrum mellem billederne */
@@ -58,7 +68,7 @@ body{
 /*FOOTEREN STYLES HER*/
 
 footer {
-    color: #14140d;
+    color: var(--sort);
     padding: 30px;
     text-align: center;
 }
@@ -94,4 +104,48 @@ footer {
     width: 30px;
     height: 30px;
     opacity: 0.8;
+}
+
+
+
+
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .galleri {
+        flex-direction: column;
+    }
+
+    .galleri img {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #headerbillede {
+        width: 100px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+
+    .some img {
+        width: 25px;
+        height: 25px;
+    }
 }
