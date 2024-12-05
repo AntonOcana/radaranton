@@ -1,64 +1,92 @@
-/* Generelle stilarter */
+body, html{
+  margin: 5px;
+  }
+
+
 body {
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Får body til at fylde hele skærmens højde */
+}
+
+
+main {
+  display: flex;
+  justify-content: flex-start; /* bliver allign til venstre */
+  align-items: flex-start; /* ting bliver allignet til top */
+  padding: 20px;
+  gap: 30px; /* luft mellem tekst og billede */
+  flex-grow: 1; /*her får jeg gjort så main sektionen optager al plads og skubber footer ned til den responsiev del*/
 }
 
 .container {
-  display: flex;
-  gap: 20px;
-  height: auto;
-  padding: 20px;
+  max-width: 60%; /* tekstområdet mindre */
 }
 
-p {
-  color: #14140d;
-  line-height: 1.6;
-  font-size: 1.1rem;
-}
-.billedeomradar{
-  max-width: 100%;
-  height: auto;
-  padding: 20px;
-  gap: 20px;
-}
-.billedeomradar img{
-  width: 600px;
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
-/* Styling af footer */
+.container p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Lampe billedets styling */
+.billedeomradar {
+  position: absolute;
+  top: 120px; /* Adjust this value to fit under the navbar */
+  right: 20px; /* Place the image on the right side */
+  width: 500px; /* Set the width of the lamp image */
+  
+}
+
+.billedeomradar img {
+  width: 100%; /* Ensure the image adjusts to the width of the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/*FOOTEREN STYLES HER*/
+
 footer {
-  color: var(--hvid);
+  color: var(--sort);
   padding: 30px;
   text-align: center;
+  margin-top: auto;
 }
+
 
 .footer-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: space-between; /* Placerer de to divs på hver sin side */
+  align-items: center; /* Centrerer vertikalt */
+  width: 100%;
+  margin-top: auto;
 }
 
-.contact-info {
-  text-align: left;
-  max-width: 600px;
+
+.some {
+  display: flex;
+  justify-content: flex-end; /* Sørger for at indholdet i .some er højre--justeret */
+  margin: 0 10px;
+  margin-top: auto;
+  
 }
+
 
 .contact-info span {
-  display: block;
+  display: flex;
   margin: 5px 0;
 }
 
 .contact-info a {
-  color: (var(--hvid));
+  color: #14140d;
   text-decoration: none;
 }
 
 .some a {
   margin: 0 10px;
-  display: inline-block;
 }
 
 .some img {

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.8;
 }
 
 :root{
@@ -16,24 +17,34 @@
 }
 
 
-body{
+body,html{
     font-family: "neue-haas-unica", sans-serif;
     background-color: var(--hvid);
+        margin: 5px;
+}
+
+#headerbillede{
+    width: 150px; /* Juster størrelsen på billedet */
+    position: absolute; /* Gør elementet uafhængigt af normale flow-regler */
+    top: 0; /* Flyt til toppen af skærmen */
+    left: 0; /* Flyt til venstre */
+    margin: 10px;
+    
+    
 }
 
 /*Her styler jeg min navigations-bar*/
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 20px;
     padding: 20px;
     background-color: var(--hvid);
+    position: relative;
 
 }
-#headerbillede{
-    width: 150px;
-    height: auto;
-}
+
 
 .navbar a {
     text-decoration: none;
@@ -43,6 +54,30 @@ body{
 
 .navbar a:hover {
     color: var(--rød);
+}
+
+ /* Styling til dropdownmenueN */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--sort);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /*Her påbegynder jeg stylingen af mit "galleri" altså de 3 billeder der fremgår på forside*/
@@ -73,20 +108,24 @@ footer {
     text-align: center;
 }
 
+
 .footer-content {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
+    justify-content: space-between; /* Placerer de to divs på hver sin side */
+    align-items: center; /* Centrerer vertikalt */
+    width: 100%;
 }
 
-.contact-info {
-    text-align: left;
-    max-width: 600px;  /* Limit the width for better readability */
+
+.some {
+    display: flex;
+    justify-content: flex-end; /* Sørger for at indholdet i .some er højrejusteret */
+    margin: 0 10px;
 }
+
 
 .contact-info span {
-    display: block;
+    display: flex;
     margin: 5px 0;
 }
 
@@ -97,7 +136,6 @@ footer {
 
 .some a {
     margin: 0 10px;
-    display: inline-block;
 }
 
 .some img {

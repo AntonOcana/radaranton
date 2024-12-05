@@ -1,70 +1,115 @@
-/* Generel styling for siden */
+/* Global styling */
 *{
     margin: 0;
     padding: 0;
     background-color: var(--hvid);
+    line-height: 1.6;
+}
+body, html{
+margin: 5px;
 }
 
-header {
-    background-color: var(--hvid);
-    text-align: center;
+.container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;  /* Sætter bredden af formularen til 300px */
+    margin-top: 20px;  /* Giver lidt afstand fra toppen af skærmen */
 }
 
-.navbar {
+h1 {
+    text-align: left;
+    color: var(--sort);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+form {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
 }
 
-.navbar a {
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.submit-btn {
+    background-color: var(--rød);
     color: var(--hvid);
-    text-decoration: none;
-    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
-.navbar a:hover {
-    color: var(--rød);
-}
-
-#frivillig{
-    padding: 20px;
-    gap: 20px;
-display: flex;
+button.submit-btn:hover {
+    background-color: #45a049;
 }
 
 
-/* Footer styling */
-footer {
+/*BILAG til udarbejdelse af formular*/
+
+/*https://www.w3schools.com/html/html_forms.asp*/
+
+
+/*FOOTEREN STYLES HER*/
+footer{
     color: var(--sort);
     padding: 30px;
-    text-align: center;
+    text-align: center;  
 }
 
 .footer-content {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
+    justify-content: space-between; /* Placerer de to divs på hver sin side */
+    align-items: center; /* Centrerer vertikalt */
+    width: 100%;
 }
 
-.contact-info {
-    text-align: left;
-    max-width: 600px;  /* Limit the width for better readability */
+
+.some {
+    display: flex;
+    justify-content: flex-end; /* Sørger for at indholdet i .some er højrejusteret */
+    margin: 0 10px;
 }
+
 
 .contact-info span {
-    display: block;
+    display: flex;
     margin: 5px 0;
 }
 
 .contact-info a {
-    color: var(--sort);
+    color: #14140d;
     text-decoration: none;
 }
 
 .some a {
     margin: 0 10px;
-    display: inline-block;
 }
 
 .some img {

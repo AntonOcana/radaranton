@@ -7,12 +7,8 @@ body{
 
 }
 main img{
-    display: flex;
-    width: 800px;
-    height: auto;
     opacity: 0.8;
 }
-
 
 .billedstyling {
     width: 100%;  /* Gør billedet så bredt som containeren */
@@ -21,7 +17,9 @@ main img{
 }
 
 #medlemskab{
+text-align: center;
         margin-bottom: 30px;
+        line-height: 1.6;
         background-color: var(--hvid);
         border-radius: 8px;
         padding: 20px;
@@ -29,27 +27,32 @@ main img{
     }
     
 
-/* Footer Styling */
+/*FOOTEREN STYLES HER*/
+
 footer {
     color: var(--sort);
     padding: 30px;
     text-align: center;
 }
 
+
 .footer-content {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
+    justify-content: space-between; /* Placerer de to divs på hver sin side */
+    align-items: center; /* Centrerer vertikalt */
+    width: 100%;
 }
 
-.contact-info {
-    text-align: left;
-    max-width: 600px;  /* Limit the width for better readability */
+
+.some {
+    display: flex;
+    justify-content: flex-end; /* Sørger for at indholdet i .some er højrejusteret */
+    margin: 0 10px;
 }
+
 
 .contact-info span {
-    display: block;
+    display: flex;
     margin: 5px 0;
 }
 
@@ -60,7 +63,6 @@ footer {
 
 .some a {
     margin: 0 10px;
-    display: inline-block;
 }
 
 .some img {

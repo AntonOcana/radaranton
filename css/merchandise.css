@@ -12,88 +12,55 @@ body {
     line-height: 1.6;
 }
 
-/* Header and Navbar */
-header {
-    background-color: var(--hvid);
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-
-.navbar a:hover {
-    color: #ff6f61;
-}
-
-#headerbillede {
-    width: 150px;
-    margin-right: 20px;
-}
 
 /* Selve mainen(tekst) */
 main {
-    text-align: center;
-    margin: 40px auto;
-    max-width: 1200px;
+display: block;
 }
 
 h1 {
     font-size: 36px;
     color: #14140D;
-    margin-bottom: 20px;
 }
 
 p {
     font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Billederne i bunden af tekst */
-.mangebilleder {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 40px;
+   
 }
 
 .mangebilleder img {
     width: 200px;
     height: auto;
-    transition: transform 0.3s;
+    display: flex;
 }
 
-.mangebilleder img:hover {
-    transform: scale(1.1);
-}
+/*FOOTEREN STYLES HER*/
 
-/* footeren styles */
 footer {
     color: var(--sort);
     padding: 30px;
     text-align: center;
 }
 
+
 .footer-content {
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
+    justify-content: space-between; /* Placerer de to divs på hver sin side */
+    align-items: center; /* Centrerer vertikalt */
+    width: 100%;
 }
 
-.contact-info {
-    text-align: left;
-    max-width: 600px;  /* Limit the width for better readability */
+
+.some {
+    display: flex;
+    justify-content: flex-end; /* Sørger for at indholdet i .some er højrejusteret */
+    margin: 0 10px;
 }
+
 
 .contact-info span {
-    display: block;
+    display: flex;
     margin: 5px 0;
 }
 
@@ -104,7 +71,6 @@ footer {
 
 .some a {
     margin: 0 10px;
-    display: inline-block;
 }
 
 .some img {
