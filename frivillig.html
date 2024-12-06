@@ -26,30 +26,42 @@
     </header>
             
 
-<main>
- <!-- Artikel 1: Frivillig hos Radarlive -->
-    <h2>Frivillig hos Radar</h2>
-    <p>At være frivillig hos Radarlive er en fantastisk oplevelse, der giver dig mulighed for at blive en del af Aarhus' unikke musikscene.  Som frivillig er du med til at opretholde et samlingspunkt for musikelskere i byen, samtidig med at du får erfaring, netværk og muligheden for at udvikle dig selv.
-    Er du klar til at gøre noget ved det? At blive frivillig hos Radar betyder, at du også er en del af noget større – en musikalsk bevægelse, der kæmper for at blive bevaret. Tag del i kampen, oplev musikken tættere på end nogensinde før, og vær med til at sikre, at dette fantastiske sted ikke går tabt.
-</section>
-<!--HER SKAL LAVES EN FORM TIL ANSØGERE SOM FRIVILLIG-->
+    <main>
+        <!-- Container til tekst og form -->
+        <div class="content-container">
+            <!-- Tekstsektionen -->
+            <section class="text-section">
+                <h2>Frivillig hos Radar</h2>
+                <p>
+                    At være frivillig hos Radar er en fantastisk oplevelse, der giver dig mulighed for at blive en del af Aarhus' unikke musikscene. Som frivillig er du med til at opretholde et samlingspunkt for musikelskere i byen, samtidig med at du får erfaring, netværk og muligheden for at udvikle dig selv.
+                </p>
+                <p>
+                    Er du klar til at gøre noget ved det? At blive frivillig hos Radar betyder, at du også er en del af noget større – en musikalsk bevægelse, der kæmper for at blive bevaret. Tag del i kampen, oplev musikken tættere på end nogensinde før, og vær med til at sikre, at dette fantastiske sted ikke går tabt.
+                </p>
+            </section>
+    
+            <!-- Form-sektionen -->
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <label for="fulde-navn">Fulde navn</label>
+                    <input type="text" id="fulde-navn" name="fulde-navn" placeholder="John Doe" required>
+                    
+                    <label for="telefonnummer">Telefonnummer</label>
+                    <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="+45 12345678" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="anton@radar.dk" required>
+                    
+                    <label for="besked">Skriv lidt om dig selv, og hvorfor du ønsker at være frivillig hos os</label>
+                    <textarea id="besked" name="besked" placeholder="F.eks. kæmpe musiknørd med hang til det nichede og ukendte" rows="4" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
 
-<section id="containfriv">
-    <form action="/submit-form" method="POST">
-        <label for="name">Fulde navn:</label>
-        <input type="text" id="name" name="name" required placeholder="Indtast dit fulde navn">
-
-        <label for="email">E-mail adresse:</label>
-        <input type="email" id="email" name="email" required placeholder="Indtast din e-mail adresse">
-
-        <label for="phone">Telefonnummer:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Indtast dit telefonnummer">
-
-        <label for="message">Skriv lidt om dig selv, og hvorfor du ønsker at være frivillig hos os:</label>
-        <textarea id="message" name="message" placeholder="F.eks. Kæmpe musiknørd med hang til det nichede" rows="4"></textarea>
-
-        <button type="submit" class="submit-btn">Tilmeld dig</button>
-    </form>
 </div>
 </main>
     <footer>
