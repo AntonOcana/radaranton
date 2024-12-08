@@ -148,7 +148,7 @@ footer {
 
 
 
-/* Responsiv design */
+/* Responsiv design til telefonen */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
