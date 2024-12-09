@@ -89,3 +89,45 @@ footer {
     opacity: 0.8;
 }
 
+
+@media (max-width: 768px) {
+    .containermerch {
+        flex-direction: column; /* Gør at tekst og billeder stackes vertikalt */
+        align-items: center; 
+    }
+
+    .merchtekst {
+        max-width: 100%; /* Gør teksten bredere på små skærme */
+        margin-right: 0; /* Fjern højre margin */
+        text-align: center; 
+    }
+
+    .merchpics {
+        flex-direction: column; /* Billederne stackes vertikalt i stedet */
+        align-items: center; /* Centrerer billederne */
+    }
+
+    .merchpics img {
+        width: 100%; /* Gør billederne responsive og tager op til 100% af containerens bredde */
+        max-width: 500px; /* Sætter en maks bredde */
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column; /* Centrerer indholdet i footeren */
+        align-items: center;
+    }
+
+    .some {
+        justify-content: center; /* Centrerer indholdet i .some */
+        margin: 10px 0; /* Tilføjer lidt afstand i marginen */
+    }
+
+    .some img {
+        width: 40px; 
+        height: 40px;
+    }
+}

@@ -76,3 +76,44 @@ footer {
     opacity: 0.8;
 }
 
+
+
+
+
+@media (max-width: 768px) {
+
+    /* footer */
+    .footer-content {
+        flex-direction: column; /* Stabler elementerne vertikalt på små skærme */
+        align-items: center;
+        text-align: center;
+    }
+
+    .some {
+        justify-content: center; /* Centrerer ikonerne */
+        margin: 20px 0;
+    }
+
+    .some img {
+        width: 25px; /* Gør ikonerne lidt mindre */
+        height: 25px;
+    }
+
+    /* For #medlemskab sektionen */
+    #medlemskab {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    /* For billeder i main */
+    main img {
+        width: 100%; /* Gør billederne responsiv */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .billedstyling {
+        padding: 15px; /* Reduceret polstring for små skærme */
+    }
+}
+

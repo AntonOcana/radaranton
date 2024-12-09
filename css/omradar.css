@@ -106,51 +106,37 @@ footer {
 
 
 /* Når skærmbredden er mindre end 768px */
-@media screen and (max-width: 768px) {
-  body {
-    flex-direction: column;
+  @media screen and (max-width: 768px) {
+    body {
+      flex-direction: column; /* Sørger for, at elementerne stacker lodret */
+    }
+  
+    main {
+      flex-direction: column; /* Skift layout til kolonne */
+      align-items: center; /* Centrer elementerne */
+    }
+  
+    .container {
+      max-width: 90%; /* Gør teksten bredere */
+      margin-bottom: 20px; /* Tilføj afstand under teksten */
+    }
+  
+    .billedeomradar {
+      display: block; /* Sørger for, at billedområdet fungerer som en blok */
+      width: 100%; /* Billedet fylder hele bredden */
+      margin-top: 20px; /* Sikrer afstand til teksten */
+      text-align: center; /* Centrer billedet, hvis nødvendigt */
+    }
+  
+    .billedeomradar img {
+      display: block; /* Ændrer fra flex til block */
+      margin: 0 auto; /* Centrerer billedet horisontalt */
+      width: 100%; /* Holder billedet responsivt */
+      height: auto;
+    }
+  
+    .container h1 {
+      font-size: 24px; /* Mindre skrift for overskriften */
+      margin-bottom: 20px; /* Tilføj afstand mellem overskriften og resten */
+    }
   }
-
-  .container {
-    max-width: 90%; /* Gør containeren bredere på små skærme */
-  }
-
-  .container h1 {
-    font-size: 24px; /* Mindre skriftstørrelse */
-  }
-
-  .container p {
-    font-size: 14px; /* Mindre skriftstørrelse */
-  }
-
-  /* Lampe billede styling til små skærme */
-  .billedeomradar {
-    position: relative; /* Ændrer positionen for at undgå overlapning */
-    top: 0; /* Justerer billedets top */
-    right: 0;
-    width: 100%; /* Gør billedet responsivt og tilpasser bredden */
-  }
-
-  footer {
-    padding: 20px; /* Mindre padding på små skærme */
-  }
-
-  .footer-content {
-    flex-direction: column; /* Ændrer footer-indholdet til at være i en kolonne */
-    align-items: center; /* Centrerer indholdet */
-  }
-
-  .some {
-    justify-content: center; /* Centrerer indholdet i .some */
-    margin-top: 10px; /* Justerer margin */
-  }
-
-  .some a {
-    margin: 0 5px; /* Mindre afstand mellem links */
-  }
-
-  .some img {
-    width: 25px; /* Mindre ikoner */
-    height: 25px;
-  }
-}

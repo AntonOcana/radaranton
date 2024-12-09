@@ -83,7 +83,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #8c1818;
+    background-color: #8c1818; /*den røde farve ændres lidt for at vise hovereffekten*/
 }
 
 /* Responsivt design */

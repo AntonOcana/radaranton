@@ -13,14 +13,12 @@
     font-family: "neue-haas-unica", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
-
 
 body,html{
     font-family: "neue-haas-unica", sans-serif;
     background-color: var(--hvid);
-        margin: 5px;
+    margin: 5px;
 }
 
 #headerbillede{
@@ -29,22 +27,17 @@ body,html{
     top: 0; /* Flyt til toppen af skærmen */
     left: 0; /* Flyt til venstre */
     margin: 10px;
-    
-    
 }
 
-/*Her styler jeg min navigations-bar*/
+/* Her styler jeg min navigations-bar */
 .navbar{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
     padding: 20px;
     background-color: var(--hvid);
     position: relative;
-
 }
-
 
 .navbar a {
     text-decoration: none;
@@ -56,8 +49,39 @@ body,html{
     color: var(--rød);
 }
 
- /* Styling til dropdownmenueN */
- .dropdown {
+/* Burger-menu styling */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.burger-menu .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #14140d;
+}
+
+/*Her får jeg sikret mig at den lille checkbox ikke pludseligt står flyvende ind på eks. desktop*/
+.burger-checkbox{
+display: none;
+}
+
+/* Menu links */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #14140d;
+}
+
+/* Dropdown menu */
+.dropdown {
     position: relative;
     display: inline-block;
 }
@@ -80,17 +104,20 @@ body,html{
     display: block;
 }
 
-/*Her påbegynder jeg stylingen af mit "galleri" altså de 3 billeder der fremgår på forside*/
+/* Galleri styling */
 .galleri {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     height: auto;
-    max-width: 100%;
+    width: 100%;
     gap: 10px;
 }
 
-.galleri img{
-    justify-content: space-between; /* Tilføj mellemrum mellem billederne */
-    width: 625px;
+.galleri img {
+    justify-content: space-between;
+    max-width: 600px;
     padding: 20px;
     transition: opacity 0.3s ease;
 }
@@ -99,30 +126,25 @@ body,html{
     opacity: 0.5;
 }
 
-
-/*FOOTEREN STYLES HER*/
-
+/* Footer styling */
 footer {
     color: var(--sort);
     padding: 30px;
     text-align: center;
 }
 
-
 .footer-content {
     display: flex;
-    justify-content: space-between; /* Placerer de to divs på hver sin side */
-    align-items: center; /* Centrerer vertikalt */
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
-
 .some {
     display: flex;
-    justify-content: flex-end; /* Sørger for at indholdet i .some er højrejusteret */
+    justify-content: flex-end;
     margin: 0 10px;
 }
-
 
 .contact-info span {
     display: flex;
@@ -144,46 +166,33 @@ footer {
     opacity: 0.8;
 }
 
-
-
-
-
-/* Responsiv design til telefonen */
-@media (max-width: 768px) {
-    .navbar {
+/* Responsiv styling */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        width: 100%;
         flex-direction: column;
         gap: 10px;
-        text-align: center;
+        background-color: var(--hvid);
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
     }
 
-    .galleri {
-        flex-direction: column;
+    .navbar-links a {
+        padding: 10px 20px;
     }
 
-    .galleri img {
-        max-width: 100%;
+    .burger-checkbox:checked + .burger-menu + .navbar-links {
+        display: flex;
     }
 
-    .footer-content {
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    #headerbillede {
-        width: 100px;
+    .burger-menu {
+        display: flex;
     }
 
-    .navbar a {
-        font-size: 14px;
-    }
-
-    .contact-info {
-        font-size: 14px;
-    }
-
-    .some img {
-        width: 25px;
-        height: 25px;
+    .burger-checkbox {
+        display: none;
     }
 }

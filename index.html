@@ -11,30 +11,36 @@
     <header>
         <nav class="navbar">
             <a class="a" href="index.html"><img id="headerbillede" src="/img/radarlille.svg" alt="radarlogo"></a>
-            <a class="a" href="omradar.html">Om Radar</a>
-            <a class="a" href="medlemskab.html">Medlemskab</a>
-            <div class="dropdown">
-                <a class="a" href="frivillig.html">Frivillig</a>
-                <div class="dropdown-content">
-                    <a href="#">Bliv frivillig</a>
-                    <a href="#">Fællesskab</a>
+            <!-- Burger menu checkbox -->
+            <input type="checkbox" class="burger-checkbox" id="burger-checkbox">
+            <!-- Burger menu button -->
+            <label for="burger-checkbox" class="burger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <!-- Navigation links -->
+            <div class="navbar-links">
+                <a class="a" href="omradar.html">Om Radar</a>
+                <a class="a" href="medlemskab.html">Medlemskab</a>
+                <div class="dropdown">
+                    <a class="a" href="frivillig.html">Frivillig</a>
+                    <div class="dropdown-content">
+                        <a href="#">Bliv frivillig</a>
+                        <a href="#">Fællesskab</a>
+                    </div>
                 </div>
+                <a class="a" href="merchandise.html">Merchandise</a>
             </div>
-            <a class="a" href="merchandise.html">Merchandise</a>
         </nav>
     </header>
-            
-
     <main>
-       
-
-<div class="galleri">
-<img src="/img/haenderbogw.jpg" alt="koncert">
-<img src="/img/bogwmanddame.png" alt="personaleradar">
-<img src="/img/koncertbogow.png" alt="publikumradar">
-</div> 
+        <div class="galleri">
+            <img src="/img/haenderbogw.jpg" alt="koncert">
+            <img src="/img/bogwmanddame.png" alt="personaleradar">
+            <img src="/img/koncertbogow.png" alt="publikumradar">
+        </div> 
     </main>
-
     <footer> 
         <div class="footer-content">
             <div class="contact-info">
@@ -45,30 +51,27 @@
                 <span>Bookingforespørgsler: <a href="mailto:booking@radarlive.dk">booking(@)radarlive.dk</a></span>
                 <span>Generel kontakt: <a href="mailto:kontakt@radarlive.dk">kontakt(@)radarlive.dk</a></span>
             </div>
-            <!-- Social Media Links -->
+            <div class="formular">
+                <form
+                action="svar.html" 
+                method="get" 
+                target="_blank">
+            </div>
+            
+            <!--Form fra undervisningen-->
+            </form>
+            <form action="svar.html">
+            <label for="email">Hold dig opdateret på kommende arrangementer, events & koncerter:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+            </form>
+            
             <div class="some">
-                <a href="https://facebook.com/radarlive" target="_blank"><img src="/img/facebook.svg" alt="Facebook"></a>
-                <a href="https://instagram.com/radarlive" target="_blank"><img src="/img/instagram-svgrepo-com.svg" alt="Instagram"></a>
-                <a href="https://youtube.com/user/radarliverec" target="_blank"><img src="img/youtube-2-logo-svgrepo-com.svg" alt="youtube"></a>
+            <a href="https://facebook.com/radarlive" target="_blank"><img src="/img/facebook.svg" alt="Facebook"></a>
+            <a href="https://instagram.com/radarlive" target="_blank"><img src="/img/instagram-svgrepo-com.svg" alt="Instagram"></a>
+            <a href="https://youtube.com/user/radarliverec" target="_blank"><img src="img/youtube-2-logo-svgrepo-com.svg" alt="youtube"></a>
             </div>
         </div>
-            </div>
-    </div>
-<div class="formular">
-    <form
-    action="svar.html" 
-    method="get" 
-    target="_blank">
-</div>
-
-<!--Form fra undervisningen-->
-</form>
-<form action="svar.html">
-<label for="email">Hold dig opdateret på kommende arrangementer, events & koncerter:</label>
-<input type="email" id="email" name="email">
-<input type="submit" value="Submit">
-</form>
-
     </footer>
 </body>
 </html>
