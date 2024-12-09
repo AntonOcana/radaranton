@@ -45,6 +45,7 @@ main {
 /* Lampe billedets styling */
 .billedeomradar {
  display: flex;
+ flex-wrap: wrap;
  justify-content: flex-start;
  align-items: flex-start;
  width: 500px;
@@ -53,9 +54,7 @@ main {
 .billedeomradar img {
   width: 100%;
   height: auto; 
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  display: block;
 }
 
 /*FOOTEREN STYLES HER*/
@@ -108,4 +107,5 @@ footer {
   height: 30px;
   opacity: 0.8;
 }
+
 
