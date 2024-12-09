@@ -1,3 +1,4 @@
+/* Reset af globalstyling */
 * {
     margin: 0;
     padding: 0;
@@ -72,8 +73,8 @@ form input:focus, form textarea:focus {
 }
 
 form button {
-    background-color: #a41e1e;
-    color: white;
+    background-color: var(--rød);
+    color: var(--hvid);
     border: none;
     cursor: pointer;
     padding: 12px;

@@ -1,4 +1,4 @@
-/* Reset some default styles */
+/* Reset af globalstyling */
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +13,36 @@ body {
 }
 
 
-/* Selve mainen(tekst) */
-main {
-display: block;
+/* Nu styler jeg mit indhold til merchsiden igen*/
+.containermerch {
+    display: flex; 
+    justify-content: space-between; /* Placer tekst og billeder med luft imellem */
+    align-items: flex-start; /* Sørger for, at alt starter på linje */
+    margin: 20px; /* Tilføjer luft omkring layoutet */
 }
 
-h1 {
-    font-size: 36px;
-    color: #14140D;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.8;
-   
-}
-
-.mangebilleder img {
-    width: 200px;
-    height: auto;
+.merchtekst {
+    max-width: 40%; /* teksten får kun 40% for at gøre indholdet mere spiseligt */
+    margin-right: 20px; /* Tilføj afstand mellem tekst og billeder */
     display: flex;
+    flex-direction: column; /* Afsnittene bliver lodret */
+    gap: 15px; /* Tilføj luft mellem afsnit */
+}
+
+.merchtekst p {
+    line-height: 1.8; 
+    text-align: justify; /* Gør teksten jævnt i begge sider */
+}
+
+.merchpics {
+    display: flex; /* Læg billederne side om side */
+    flex-direction: row; /* Placer billederne ved siden af hinanden i række */
+    gap: 20px; /* Tilføj luft mellem billederne */
+}
+
+.merchpics img {
+    width: 400px;
+    height: auto;
 }
 
 /*FOOTEREN STYLES HER*/

@@ -1,3 +1,4 @@
+/* Reset af globalstyling */
 * {
   margin: 0;
   padding: 0;
@@ -13,45 +14,42 @@ body, html{
 body {
   display: flex;
   flex-direction: column;
-  height: 100% /* Får body til at fylde hele skærmens højde */
 }
 
 
 main {
   display: flex;
-  justify-content: flex-start; /* bliver allign til venstre */
+  justify-content: space-between;
   align-items: flex-start; /* ting bliver allignet til top */
   padding: 20px;
-  gap: 30px; /* luft mellem tekst og billede */
-  flex-grow: 1; /*her får jeg gjort så main sektionen optager al plads og skubber footer ned til den responsiev del*/
 }
 
 .container {
-  max-width: 60%; /* tekstområdet mindre */
+  max-width: 45%; /* tekstområdet mindre */
 }
 
 .container h1 {
   font-size: 28px;
-  margin-bottom: 20px;
 }
 
 .container p {
-  font-size: 16px;
   margin-bottom: 15px;
 }
 
 /* Lampe billedets styling */
 .billedeomradar {
-  position: absolute;
-  top: 120px; /* Adjust this value to fit under the navbar */
-  right: 20px; /* Place the image on the right side */
-  width: 500px; /* Set the width of the lamp image */
-  
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ width: 500px;
 }
 
 .billedeomradar img {
-  width: 100%; /* Ensure the image adjusts to the width of the container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*FOOTEREN STYLES HER*/
