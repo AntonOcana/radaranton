@@ -10,6 +10,12 @@ body, html{
   height: 100%;
   }
 
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 
 body {
   display: flex;
@@ -103,40 +109,3 @@ footer {
   opacity: 0.8;
 }
 
-
-
-/* Når skærmbredden er mindre end 768px */
-  @media screen and (max-width: 768px) {
-    body {
-      flex-direction: column; /* Sørger for, at elementerne stacker lodret */
-    }
-  
-    main {
-      flex-direction: column; /* Skift layout til kolonne */
-      align-items: center; /* Centrer elementerne */
-    }
-  
-    .container {
-      max-width: 90%; /* Gør teksten bredere */
-      margin-bottom: 20px; /* Tilføj afstand under teksten */
-    }
-  
-    .billedeomradar {
-      display: block; /* Sørger for, at billedområdet fungerer som en blok */
-      width: 100%; /* Billedet fylder hele bredden */
-      margin-top: 20px; /* Sikrer afstand til teksten */
-      text-align: center; /* Centrer billedet, hvis nødvendigt */
-    }
-  
-    .billedeomradar img {
-      display: block; /* Ændrer fra flex til block */
-      margin: 0 auto; /* Centrerer billedet horisontalt */
-      width: 100%; /* Holder billedet responsivt */
-      height: auto;
-    }
-  
-    .container h1 {
-      font-size: 24px; /* Mindre skrift for overskriften */
-      margin-bottom: 20px; /* Tilføj afstand mellem overskriften og resten */
-    }
-  }
