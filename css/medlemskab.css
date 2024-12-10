@@ -12,9 +12,6 @@ body{
     padding: 0;
 
 }
-main img{
-    opacity: 0.8;
-}
 
 .billedstyling {
     width: 100%;  /* Gør billedet så bredt som containeren */
@@ -31,6 +28,22 @@ main img{
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     }
     
+/*Infographic styles herr*/
+.imgwrapper {
+    width: 400px; 
+    height: auto; 
+    margin: 0 auto; /*får centreret info*/
+    
+}
+  
+  .imgwrapper img {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+      }
 
 /*FOOTEREN STYLES HER*/
 
@@ -73,8 +86,7 @@ footer {
 .some img {
     width: 30px;
     height: 30px;
-    opacity: 0.8;
-}
+   }
 
 
 
