@@ -29,21 +29,20 @@ body{
     }
     
 /*Infographic styles herr*/
+
 .imgwrapper {
-    width: 400px; 
+    width: 100%; /* Brug 100% bredde i stedet for en fast værdi */
+    max-width: 400px; /* Sæt max-width for at sikre, at billedet ikke bliver for stort */
     height: auto; 
-    margin: 0 auto; /*får centreret info*/
-    
+    margin: 0 auto; /* Får centreret info */
 }
-  
-  .imgwrapper img {
-    width: 400px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-   
-    
-      }
+
+.imgwrapper img {
+    width: 100%; /* Gør billedet responsivt */
+    height: auto; /* Beholder billedets proportioner */
+    display: block; /* Forhindrer marginer i bunden af billedet */
+}
+
 
 /*FOOTEREN STYLES HER*/
 
@@ -125,3 +124,27 @@ footer {
     }
 }
 
+/* Responsiv styling for små skærme */
+@media (max-width: 768px) {
+    /* For billeder i .imgwrapper */
+    .imgwrapper {
+        width: 100%; /* Billedet tilpasser sig containerens bredde */
+        max-width: 100%; /* Sørger for at billedet ikke bliver større end containeren */
+        padding: 10px; /* Reduceret padding for små skærme */
+    }
+
+    .imgwrapper img {
+        width: 100%; /* Billedet fylder hele containerens bredde */
+        height: auto; /* Bevarer proportionerne */
+    }
+
+    /* For #medlemskab sektionen */
+    #medlemskab {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .billedstyling {
+        padding: 15px; /* Reduceret polstring for små skærme */
+    }
+}

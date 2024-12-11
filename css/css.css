@@ -281,6 +281,22 @@ footer {
     /*Her sikrer jeg mig at mit galleri gøres større på mindre devices og optager 100% i max-width for at content fylder*/
 }
 @media screen and (max-width: 768px) {
+      /* footer */
+      .footer-content {
+        flex-direction: column; /* Stabler elementerne vertikalt på små skærme */
+        align-items: center;
+        text-align: center;
+    }
+
+    .some {
+        justify-content: center; /* Centrerer ikonerne */
+        margin: 20px 0;
+    }
+
+    .some img {
+        width: 25px; /* Gør ikonerne lidt mindre */
+        height: 25px;
+    }
     .galleri {
         gap: 5px;
     }

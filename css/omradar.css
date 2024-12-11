@@ -111,4 +111,41 @@ footer {
   opacity: 0.8;
 }
 
+/*@media til telefono herunder*/
 
+@media (max-width: 768px) {
+    /* footer */
+    .footer-content {
+      flex-direction: column; /* Stabler elementerne vertikalt på små skærme */
+      align-items: center;
+      text-align: center;
+  }
+
+  .some {
+      justify-content: center; /* Centrerer ikonerne */
+      margin: 20px 0;
+  }
+
+  .some img {
+      width: 25px; /* Gør ikonerne lidt mindre */
+      height: 25px;
+  }
+  main {
+    flex-direction: column; /* Skift fra horisontalt layout til vertikalt på mobil */
+    align-items: center;
+  }
+
+  .container {
+    max-width: 90%; /* Gør tekstområdet bredere på små skærme */
+  }
+
+  .billedeomradar {
+    width: 100%; /* Billedområdet tager nu hele bredden */
+    min-height: auto; /* Gør højde fleksibel */
+    margin-top: 20px; /* Giver lidt luft mellem tekst og billede */
+  }
+
+  .billedeomradar img {
+    width: 100%; /* Billedet fylder hele bredden */
+  }
+}
