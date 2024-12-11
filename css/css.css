@@ -118,7 +118,7 @@ display: none;
 
 .galleri img {
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 32%; /*% gør det nemmere at styre viewporten til andre devices = responsivitet*/
     padding: 20px;
     transition: opacity 0.3s ease;
 }
@@ -277,4 +277,24 @@ footer {
     .burger-checkbox {
         display: none;
     }
+
+    /*Her sikrer jeg mig at mit galleri gøres større på mindre devices og optager 100% i max-width for at content fylder*/
 }
+@media screen and (max-width: 768px) {
+    .galleri {
+        gap: 5px;
+    }
+    .galleri img {
+        max-width: 48%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .galleri img {
+        max-width: 100%;
+        display: block;
+        padding: 5px;
+    }
+}
+
