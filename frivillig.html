@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="/css/frivillig.css">
     <link rel="stylesheet" href="/css/css.css">
     <meta charset="UTF-8">
+     <!--Tilføjelse af metaindhold-->
+     <meta name="title" content="Bliv Frivillig hos Radar - Hjælp Musikkulturen i Aarhus">
+     <meta name="description" content="Bliv en del af Radar som frivillig og vær med til at støtte musikken, kulturen og fællesskabet. Din indsats gør en forskel!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Radarlive | Frivillig</title>
 </head>
@@ -53,7 +56,8 @@
     
             <!-- Form-sektionen -->
             <div class="form-container">
-                <form action="#" method="POST">
+                <form action="tilmeld.html" method="get"> <!--Method er lavet til get, da jeg ikke skal bruge konkret data fra mine brugere (jeg har ikke lært at bruge backend - 
+                    brugeren dirigeres derfor "kun" til en af mine andre statiske html-sider)-->
                     <label for="fulde-navn">Fulde navn</label>
                     <input type="text" id="fulde-navn" name="fulde-navn" placeholder="John Doe" required>
                     

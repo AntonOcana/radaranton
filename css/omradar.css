@@ -49,6 +49,8 @@ main {
  justify-content: flex-start;
  align-items: flex-start;
  width: 500px;
+ min-height: 100vh;
+
 }
 
 .billedeomradar img {
@@ -56,6 +58,7 @@ main {
   height: auto; 
   display: block;
 }
+
 
 /*FOOTEREN STYLES HER*/
 

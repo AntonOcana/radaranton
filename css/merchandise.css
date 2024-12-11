@@ -19,6 +19,7 @@ body {
     justify-content: space-between; /* Placer tekst og billeder med luft imellem */
     align-items: flex-start; /* Sørger for, at alt starter på linje */
     margin: 20px; /* Tilføjer luft omkring layoutet */
+    min-height: 100vh;
 }
 
 .merchtekst {
